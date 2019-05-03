@@ -76,3 +76,73 @@ Please be aware that community supported install and upgrade scripts that we wil
 - Must maintain the same user interface as our official install/upgrade scripts (eg. shell script echo's and 'read' statements must match the same wording to ensure that the installation experience across all OSes and distributions give the same user experience.)
 
 If you have any queries regarding the above rules please feel free to contact me at: [ballen@zpanelcp.com](mailto:ballen@zpanelcp.com).
+
+
+#SUPPORTED OS
+
+#RHEL / CentOS
+5, 6, 7
+
+#Debian
+7, 8, 9
+
+#Ubuntu
+12 . 04 / 17 . 04
+
+MINIMAL SYSTEM REQUIREMENTS
+RAM512 Mb	HDD20 Gb	CPU1 Ghz
+
+
+# Download installation script
+curl -O http://vestacp.com/pub/vst-install.sh
+
+
+# Download installation script
+curl -O https://raw.githubusercontent.com/marconimp/vestacp/master/vst-install.sh
+
+
+# Run it
+bash vst-install.sh
+
+# Run it
+bash vst-install.sh --nginx yes --phpfpm yes --apache no --named yes --remi yes --vsftpd no --proftpd yes --iptables no --fail2ban no --quota no --exim yes --dovecot yes --spamassassin no --clamav no --softaculous yes --mysql yes --postgresql no --hostname vaiplay.com --email csg4mes@yahoo.com.br --password 123456
+
+https://ip:8083
+
+admin
+
+123456
+
+==============================================
+# ns1.localhost.tld
+# ns2.localhost.tld
+==============================================
+
+chmod 777 -R 777 /home/admin/
+
+==============================================
+
+# wordpress
+sudo chmod 777 /home/admin/conf/web
+
+sudo chmod 777 /home/admin/conf/web/vaiplay.com.nginx.conf
+
+https://www.youtube.com/watch?v=UFtPEjLSApk
+
+try_files $uri $uri/ /index.php?q=$request_uri;
+
+try_files $uri $uri/ /index.php?$args;
+
+==============================================
+
+# PHP ZIP extension (ZipArchive)
+
+sudo apt-get install php7.0-zip
+
+To see additional PHP 7 libraries that are available, run:
+
+sudo apt-cache search php7.0-*
+
+ # PHP settings
+ 
+ https://www.youtube.com/watch?v=PTElv4Bo37s
